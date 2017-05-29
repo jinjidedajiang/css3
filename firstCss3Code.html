@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css3 first code</title>
+	<style type="text/css">
+		div {
+			height: 30px;
+			background: black;
+		}
+
+		div[id*='section'] {
+			background: red;
+		}
+
+		div[id^='2'] {
+			background: blue;
+		}
+	</style>
+</head>
+<body>
+
+<p>
+	<h4>选择器 [attr*='']</h4>
+	<div id='1section1'></div>
+	<div id='2section2'></div>
+	<div id='section2'></div>
+	<div id='mytest3'></div>
+</p>
+
+
+</body>
+</html>
