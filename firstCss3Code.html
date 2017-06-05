@@ -13,11 +13,48 @@
 		}
 
 		div[id^='2'] {
+			content : 'hahahahahahahas';
 			background: blue;
 		}
+
+		a[href$='html']:before {
+			content : 'hahahahahahahas';
+			color: red;
+		}
+
+		p:first-line {
+			font-size: 30px;
+		}
+
+		#test:not(h1) {
+			background: black;
+		}
+
+		:empty {
+			background: yellow;
+		}
+
+		:target {
+			background: blue;
+		}
+
+		#test2>li:first-child {
+			background: red;
+		}
+
+		#test2>li:nth-child(even) {
+			background: blue;
+		}
+
+	/* 	p:first-letter {
+		color: yellow;
+		font-size: 30px;
+	} */
 	</style>
 </head>
 <body>
+
+
 
 <p>
 	<h4>选择器 [attr*='']</h4>
@@ -25,8 +62,35 @@
 	<div id='2section2'></div>
 	<div id='section2'></div>
 	<div id='mytest3'></div>
+	<a href="adasdjl.html">link</a>
 </p>
 
+
+<p>
+	asdasdasdsa<br>
+	dasdasdsa
+</p>
+
+
+
+
+<p id='test1'>
+	<h1 id='test1test'><a href="#test1test">test1</a></h1>
+	<h2>test2</h2>
+	<h3>test3</h3>
+	<h3>test4</h3>
+	<h3>test5</h3>
+</p>
+
+<ul id="test2">
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+</ul>
+
+<div style="clear:both;"></div>
 
 </body>
 </html>
