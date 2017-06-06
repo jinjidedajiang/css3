@@ -3,10 +3,6 @@
 <head>
 	<title>css3 first code</title>
 	<style type="text/css">
-		div {
-			height: 30px;
-			background: black;
-		}
 
 		div[id*='section'] {
 			background: red;
@@ -42,8 +38,45 @@
 			background: red;
 		}
 
-		#test2>li:nth-child(even) {
+		#test2>li:nth-child(1n+1) {
 			background: blue;
+		}
+
+		#test3>h1:nth-of-type(even) {
+			background: blue;
+		}
+
+	 	input[type='text']:active {
+	 		background: red;
+	 	}
+
+	 	input[type='text']:hover {
+	 		 background: blue;
+	 	}
+
+	 	input[type='text']:focus {
+	 		background: black;
+	 	}
+
+		input[type='checkbox']:default {
+			outline:2px solid black;
+		}
+
+		input[type='checkbox']:checked {
+			outline:2px solid blue;
+		}
+
+		input[type='checkbox']:indeterminate {
+			outline:2px solid yellow;
+		}
+
+		::selection
+		{
+				color:yellow;
+		}
+		::-moz-selection
+		{
+				color:yellow;
 		}
 
 	/* 	p:first-letter {
@@ -89,6 +122,25 @@
 	<li>4</li>
 	<li>5</li>
 </ul>
+
+<div id='test3'>
+	<h1>1</h1>
+	<p>1</p>
+	<h1>2</h1>
+	<p>2</p>
+	<h1>3</h1>
+	<p>3</p>
+	<h1>4</h1>
+	<p>4</p>
+	<h1>5</h1>
+	<p>5</p>
+</div>
+
+<input type="text" name="">
+
+<input type="checkbox" checked />aa
+<input type="checkbox" />bb
+<input type="checkbox" />cc
 
 <div style="clear:both;"></div>
 
