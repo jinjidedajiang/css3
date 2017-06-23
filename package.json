@@ -1,0 +1,27 @@
+{
+  "name": "css3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "semantic-ui": "^2.2.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinjidedajiang/css3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jinjidedajiang/css3/issues"
+  },
+  "homepage": "https://github.com/jinjidedajiang/css3#readme"
+}
